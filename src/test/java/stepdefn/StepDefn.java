@@ -8,7 +8,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
@@ -30,6 +29,7 @@ public class StepDefn {
 	}
 
 	@When("^I update my user credentials$")
+	
 	public void i_update_my_user_credentials() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 	    driver.findElement(By.id("email")).sendKeys("natarajan.ramanathan93@gmail.com");
